@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header con Menú Desplegable y Banner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <img src="image/logo.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Producto</a></li>
+                    <li><a href="#">Características</a></li>
+                    <li><a href="#">Mercado</a></li>
+                    <li><a href="#">Empresa</a></li>
+                </ul>
+            </nav>
+            <a href="#">Iniciar sesión <i class="material-icons">arrow_forward</i></a>
+        </div>
+    </header>
+    <div class="hero-section">
+        <img src="image/logo.png" alt="Ícono">
+        <h3>BIENVENIDO A CINEPLUS</h3>
+        <p class="centered">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <h1 class="text-gradient">¡Bienvenidos a CinePlus! <br>Sumérgete en el emocionante mundo del cine con nuestra
+            increíble colección de películas.</h1>
+        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aut a reiciendis modi vitae.
+            Cómo están, tendrán una experiencia inolvidable con la mejor visión.</p>
+    </div>
+    
+    <header>
+        <form id="form">
+            <input type="text" placeholder="Buscar películas favoritas" id="search" class="custom-search">
+        </form>
+    </header>
+    <div id="tags">
+        <div class="custom-tag">Action</div>
+        <div class="custom-tag">Adventure</div>
+        <div class="custom-tag">Animation</div>
+        <div class="custom-tag">Comedy</div>
+        <div class="custom-tag">Crime</div>
+        <div class="custom-tag">Documentary</div>
+        <div class="custom-tag">Drama</div>
+        <div class="custom-tag">Family</div>
+        <div class="custom-tag">Fantasy</div>
+        <div class="custom-tag">History</div>
+        <div class="custom-tag">Horror</div>
+        <div class="custom-tag">Music</div>
+        <div class="custom-tag">Mystery</div>
+        <div class="custom-tag">Romance</div>
+        <div class="custom-tag">Science Fiction</div>
+        <div class="custom-tag">TV Movie</div>
+        <div class="custom-tag">Thriller</div>
+        <div class="custom-tag">War</div>
+        <div class="custom-tag">Western</div>
+    </div>
+
+    <div id="myNav" class="custom-overlay">
+        <a href="javascript:void(0)" class="custom-closebtn" onclick="closeNav()">&times;</a>
+        <div class="custom-overlay-content" id="overlay-content"></div>
+        <a href="javascript:void(0)" class="custom-arrow left-arrow" id="left-arrow">&#8656;</a>
+        <a href="javascript:void(0)" class="custom-arrow right-arrow" id="right-arrow">&#8658;</a>
+    </div>
+    <main id="main"></main>
+    <div class="custom-pagination">
+        <div class="custom-page" id="prev">Página Anterior</div>
+        <div class="custom-current" id="current">1</div>
+        <div class="custom-page" id="next">Siguiente Página</div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
